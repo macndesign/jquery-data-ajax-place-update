@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="content">
+{% for artigo in artigos %}
+	<div id="artigo-{{ artigo.id }}">
+		<b>{{ artigo.titulo }}</b>
+		<p>{{ artigo.corpo }}</p>
+	</div>
+{% endfor %}
+</div>
+{% endblock %}

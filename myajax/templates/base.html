@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo: jQuery Data Ajax Place Update</title>
+    <style type="text/css">
+        #mysrc{height: 300px; width: 200px; border: solid 1px}
+    </style>
+</head>
+<body>
+    <h2>Demo: jQuery Data Ajax Place Update</h2>
+    
+    <a href="{% url index %}">Home</a> |
+    <a data-ajax='{"update":"#mysrc", "place": "#content"}' href="{% url listar %}">Listar</a> |
+    <a data-ajax='{"update":"#mysrc", "place": "#content"}' href="{% url teste %}">Teste</a>
+    
+    <ul>
+    {% for artigo in artigos %}
+    	<li><a data-ajax='{"update":"#mysrc", "place": "#content"}' href="{% url artigo artigo.id %}">{{ artigo.titulo }}</a></li>
+    {% empty %}
+        <li>Vazio</li>
+    {% endfor %}
+        <!-- forçar erro -->
+        <li><a data-ajax='{"update":"#mysrc", "place": "#content"}' href="/artigo/999/">Not found</a></li>
+    </ul>
+    
+    <br />
+    <div id="mysrc">{% block content %}{% endblock %}</div>
+    
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.min.js"></script>
+    <script type="text/javascript">
+        var $resources = {
+            'load_image': '<img class="loader" src="{{ MEDIA_URL }}img/loader.gif" alt="Loading...">',
+            'urlerror': '{% url error %}',
+            'url404': '{% url error-404 %}',
+            '$url500': '{% url error-500 %}'
+        }
+    </script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-data-ajax-place-update.js"></script>
+</body>
+</html>
