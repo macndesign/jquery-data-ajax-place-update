@@ -27,7 +27,7 @@ Configure attributes in the link tag:
             'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
             'urlerror': '/error/',
             'url404': '/error-404/',
-            '$url500': '/error-500/'
+            'url500': '/error-500/'
         }
     </script>
 
