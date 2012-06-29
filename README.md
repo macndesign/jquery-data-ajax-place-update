@@ -20,7 +20,7 @@ Configure attributes in the link tag:
 - update: HTML element to be inserted content.
 - place: Piece you want to capture of the link.
 
-## Define the resources in HTML page, inside of a <script> tag:
+## Define the resources in HTML page, inside of a **script** tag:
 
     <script type="text/javascript">
         var $resources = {
