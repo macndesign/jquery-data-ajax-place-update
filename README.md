@@ -22,12 +22,14 @@ Configure attributes in the link tag:
 
 ## Define the resources in HTML page, inside of a <script> tag:
 
-    var $resources = {
-        'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
-        'urlerror': '/error/',
-        'url404': '/error-404/',
-        'url500': '/error-500/'
-    }
+    <script type="text/javascript">
+        var $resources = {
+            'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
+            'urlerror': '/error/',
+            'url404': '/error-404/',
+            'url500': '/error-500/'
+        }
+    </script>
 
 ## Authors
 
