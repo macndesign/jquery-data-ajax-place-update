@@ -33,7 +33,7 @@ Configure attributes in the link tag:
 
 ## Authors
 
-- [M�rio Chaves](https://github.com/macndesign)
+- [Mário Chaves](https://github.com/macndesign)
 - [Daniel Cardoso](https://github.com/dcardosods)
 - [Ruan Carlos](https://github.com/ruanltbg)
 
