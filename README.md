@@ -21,16 +21,14 @@ Configure attributes in the link tag:
 - place: Piece you want to capture of the link.
 
 ## Define the resources:
-    <script type="text/javascript">
-    ```javascript
-        var $resources = {
-            'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
-            'urlerror': '/error/',
-            'url404': '/error-404/',
-            'url500': '/error-500/'
-        }
-	```
-    </script>
+```javascript
+    var $resources = {
+        'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
+        'urlerror': '/error/',
+        'url404': '/error-404/',
+        'url500': '/error-500/'
+    }
+```
 
 ## Authors
 
