@@ -15,7 +15,7 @@ Configure attributes in the link tag:
     <a data-ajax='{"update": "#mysrc", "place": "#content"}' href="/test/">Test</a>
     <div id="mysrc"></div>
 
-#### Attributes legend:
+### Attributes legend:
 
 - update: HTML element to be inserted content.
 - place: Piece you want to capture of the link.
@@ -31,7 +31,7 @@ Configure attributes in the link tag:
 
 ## Authors
 
-- [Mário Chaves](https://github.com/macndesign)
+- [Mï¿½rio Chaves](https://github.com/macndesign)
 - [Daniel Cardoso](https://github.com/dcardosods)
 - [Ruan Carlos](https://github.com/ruanltbg)
 
