@@ -20,20 +20,20 @@ Configure attributes in the link tag:
 - update: HTML element to be inserted content.
 - place: Piece you want to capture of the link.
 
-## Define the resources:
+## Define the resources in HTML page, inside of a **script** tag:
 
-    <script type="text/javascript">
-        var $resources = {
-            'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
-            'urlerror': '/error/',
-            'url404': '/error-404/',
-            'url500': '/error-500/'
-        }
-    </script>
+```javascript
+var $resources = {
+    'load_image': '<img class="loader" src="/path/to/img/loader.gif" alt="Loading...">',
+    'urlerror': '/error/',
+    'url404': '/error-404/',
+    'url500': '/error-500/'
+}
+```
 
 ## Authors
 
-- [Mário Chaves](https://github.com/macndesign)
+- [MÃ¡rio Chaves](https://github.com/macndesign)
 - [Daniel Cardoso](https://github.com/dcardosods)
 - [Ruan Carlos](https://github.com/ruanltbg)
 
