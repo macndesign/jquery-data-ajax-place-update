@@ -28,14 +28,14 @@
     <div id="mysrc">{% block content %}{% endblock %}</div>
     
     <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.data.apu.js"></script>
     <script type="text/javascript">
-        var $resources = {
-            'load_image': '<img class="loader" src="{{ MEDIA_URL }}img/loader.gif" alt="Loading...">',
-            'urlerror': '{% url error %}',
-            'url404': '{% url error-404 %}',
-            'url500': '{% url error-500 %}'
-        }
+        $('*[data-ajax]').dataAPU({
+            loadImage: '<img class="loader" src="{{ MEDIA_URL }}img/loader.gif" alt="Loading...">',
+            urlError: '{% url error %}',
+            url404: '{% url error-404 %}',
+            url500: '{% url error-500 %}'
+        });
     </script>
-    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-data-ajax-place-update.js"></script>
 </body>
 </html>
